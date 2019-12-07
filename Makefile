@@ -5,3 +5,6 @@ build:
 	cd docker-images && \
 	cd ubuntu/standard/2.0 && \
 	docker build -t aws/codebuild/standard:2.0 .
+
+run:
+	./docker-images/local_builds/codebuild_build.sh -i aws/codebuild/standard:2.0 -a artifact
